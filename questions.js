@@ -15,13 +15,13 @@ const requiredQuestions = {
       value = parseInt(value, 10)
       const pass = typeof value === 'number' &&
       value > 0 &&
-      value < 50 &&
+      value < 500 &&
       value === parseInt(value.toFixed(), 10)
       if (pass) {
         return true
       }
 
-      return 'Please enter a number between 0 and 50'
+      return 'Please enter a number between 0 and 500'
     },
     filter: function(val) {
       return parseInt(val, 10)
